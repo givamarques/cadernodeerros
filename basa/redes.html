@@ -6,10 +6,115 @@
     <title>Redes de Computadores</title>
 </head>
 <body>
-    <a href="index.html">← home</a>
+    <!-- <a href="../index.html">← home</a> -->
     <br>
-    <h1>Redes de Computadores</h1>
-    <h3>Questão x</h3>
-    <article>hahaahah</article>
+    <h1>Redes e Comunicação de Dados</h1>
+
+    <h2>Fundamentos de comunicação de dados</h2>
+    <p>É o estudo da troca de informações entre sistemas computacionais. Serve para transmitir dados de forma confiável e eficiente. Utiliza métodos como modulação, codificação e protocolos de transmissão.</p>
+
+    <h2>Elementos de interconexão de redes de computadores</h2>
+    <ul>
+        <li><strong>Firewalls</strong>: Dispositivos de segurança que controlam o tráfego de rede entre redes internas e externas, filtrando dados com base em regras definidas.</li>
+        <li><strong>Switches</strong>: Dispositivos que conectam computadores em uma rede local (LAN), encaminhando pacotes para o destino correto.</li>
+        <li><strong>Roteadores</strong>: Dispositivos que interligam redes distintas e determinam a melhor rota para o tráfego de dados entre elas.</li>
+    </ul>
+
+    <h2>Tecnologias de roteamento: Switches Multilayer e Roteadores</h2>
+    <p>Switches multilayer são switches que operam em múltiplas camadas do modelo OSI, permitindo decisões de roteamento. Roteadores são dispositivos que determinam o caminho de pacotes entre redes.</p>
+
+    <h2>Protocolos de roteamento e soluções para problemas (OSPF e BGP)</h2>
+    <ul>
+        <li><strong>OSPF (Open Shortest Path First)</strong>: Protocolo de roteamento interno que determina a rota mais curta dentro de uma rede.</li>
+        <li><strong>BGP (Border Gateway Protocol)</strong>: Protocolo de roteamento externo utilizado para troca de informações entre sistemas autônomos na internet.</li>
+    </ul>
+
+    <h2>Tipos e Tecnologias de redes locais e de longa distância</h2>
+    <ul>
+        <li><strong>Ethernet</strong>: Tecnologia para redes locais (LAN) que permite alta velocidade de comunicação.</li>
+        <li><strong>MPLS (Multiprotocol Label Switching)</strong>: Tecnologia usada para direcionar dados entre diferentes locais em redes de longa distância (WAN).</li>
+    </ul>
+
+    <h2>QoS e segurança em ambiente LAN e WAN</h2>
+    <p><strong>QoS (Quality of Service)</strong> é a capacidade de garantir desempenho de rede, priorizando determinados tipos de tráfego. Segurança em LAN e WAN envolve medidas para proteger dados e evitar ataques.</p>
+
+    <h2>Sistemas autônomos (ASN)</h2>
+    <p>Um sistema autônomo (AS) é um conjunto de redes sob uma única administração que compartilha políticas de roteamento comum. Cada AS é identificado por um <strong>ASN (Autonomous System Number)</strong>.</p>
+
+    <h2>Arquitetura e protocolos da família TCP/IP</h2>
+    <ul>
+        <li><strong>Funcionalidades das camadas da arquitetura TCP/IP</strong>: Dividida em quatro camadas (Aplicação, Transporte, Internet, e Enlace), cada uma com funções específicas.</li>
+        <li><strong>Análise de tabelas de rotas</strong>: Verificar rotas possíveis para pacotes de dados.</li>
+        <li><strong>Subredes e superredes</strong>: Dividir redes maiores em menores (subredes) ou unir redes menores em maiores (superredes).</li>
+        <li><strong>Controle de erro e fluxo do TCP</strong>: Utiliza reconhecimento e janela deslizante para assegurar a entrega dos pacotes.</li>
+        <li><strong>Portas de comunicação da camada de transporte</strong>: Identificadores numéricos que permitem conexões específicas entre dispositivos.</li>
+        <li><strong>Interface de sockets</strong>: Conjunto de funções usadas para comunicação de rede.</li>
+        <li><strong>Endereçamento IP (IPv4 e IPv6)</strong>: Identificação de dispositivos em redes usando endereços numéricos.</li>
+    </ul>
+
+    <h2>Serviços de redes de comunicação</h2>
+    <p>Incluem DNS, DHCP, FTP, HTTP, que facilitam a comunicação e acesso a recursos na internet.</p>
+
+    <h2>Conceitos básicos de funcionamento, segurança, tecnologias e protocolos de redes sem fio</h2>
+    <p>Redes sem fio permitem comunicação sem cabos, usando padrões como <strong>802.11</strong>. Tecnologias de segurança incluem <strong>WEP, WPA, WPA2</strong> para proteger conexões.</p>
+
+    <h2>Padrões e protocolos da família 802.1x, EAP, WEP, WPA e WPA2</h2>
+    <ul>
+        <li><strong>802.1x</strong>: Protocolo para controle de acesso a redes.</li>
+        <li><strong>EAP (Extensible Authentication Protocol)</strong>: Protocolo de autenticação.</li>
+        <li><strong>WEP, WPA, WPA2</strong>: Tecnologias de criptografia para proteger redes sem fio.</li>
+    </ul>
+
+    <h2>Componentes do perímetro de segurança</h2>
+    <ul>
+        <li><strong>Firewall Stateless</strong>: Filtra pacotes com base em regras predefinidas, sem rastrear o estado da conexão.</li>
+        <li><strong>Firewall Stateful</strong>: Monitora o estado das conexões para decisões de filtragem.</li>
+        <li><strong>Firewall Proxy</strong>: Atua como intermediário para solicitações de rede.</li>
+        <li><strong>IDS/IPS</strong>: Sistemas de detecção e prevenção de intrusões.</li>
+        <li><strong>Gateway VPN</strong>: Facilita conexões seguras entre redes através de túneis criptografados.</li>
+    </ul>
+
+    <h2>Redes SAN (Storage Area Network)</h2>
+    <p>Redes dedicadas para armazenamento de dados, usadas para conectar servidores a dispositivos de armazenamento.</p>
+
+    <h2>Switches e directors fiberchannel</h2>
+    <p>Dispositivos para conectar componentes em uma SAN. <strong>ISL (Inter Switch Link)</strong> é um link que conecta switches fiberchannel.</p>
+
+    <h2>Especificação de zoneamento (zoning)</h2>
+    <p>Técnica em SANs para controlar o acesso entre dispositivos, criando grupos (zonas) de comunicação.</p>
+
+    <h2>Conceitos e aplicações de VPN</h2>
+    <ul>
+        <li><strong>Host-To-Gateway e Gateway-To-Gateway</strong>: Tipos de VPN para conexões seguras de dispositivos a redes ou entre redes.</li>
+        <li><strong>Protocolos</strong>: <strong>IPSec (ISAKMP, AH, ESP)</strong>, <strong>PPTP</strong>, <strong>L2TP</strong> são protocolos usados para garantir segurança em VPNs.</li>
+    </ul>
+
+    <h2>Ferramentas de gerenciamento de rede (SNMP, RMON)</h2>
+    <ul>
+        <li><strong>SNMPv1, v2, v3</strong>: Protocolos para monitorar e gerenciar dispositivos de rede.</li>
+        <li><strong>RMON</strong>: Extensão do SNMP para coletar dados detalhados de redes.</li>
+    </ul>
+
+    <h2>Técnicas para coleta e processamento de informações de gerenciamento</h2>
+    <p>Envolvem o uso de SNMP para obter dados sobre o desempenho da rede, falhas e segurança.</p>
+
+    <h2>Técnicas para gerência de falhas, desempenho, configuração e segurança</h2>
+    <p>Processos que garantem o funcionamento contínuo da rede, monitorando problemas e ajustando a configuração para manter o desempenho.</p>
+
+    <h2>Meios físicos de transmissão e cabeamento estruturado</h2>
+    <p><strong>Cabeamento estruturado</strong> é um sistema de cabeamento padronizado que oferece uma infraestrutura de comunicação flexível, utilizada para conectar vários dispositivos e suportar diferentes tecnologias de rede (telefonia, internet, etc.). Serve para simplificar a instalação, manutenção e possíveis expansões.</p>
+
+    <h2>Cabeamento de cobre</h2>
+    <ul>
+        <li><strong>Cat 5e</strong>: Suporta até 1 Gbps e é usado para redes Ethernet comuns.</li>
+        <li><strong>Cat 6</strong>: Suporta até 10 Gbps em distâncias curtas, com maior proteção contra interferências.</li>
+        <li><strong>Cat 6a</strong>: Similar ao Cat 6, mas com menos interferência e alcance estendido para transmissões de até 10 Gbps.</li>
+    </ul>
+
+    <h2>Fibra ótica</h2>
+    <ul>
+        <li><strong>Monomodo</strong>: Possui um núcleo menor que permite a propagação de um único modo de luz, ideal para transmissões de longa distância com altas velocidades.</li>
+        <li><strong>Multimodo</strong>: Tem um núcleo maior que permite a propagação de múltiplos modos de luz, utilizado em conexões de curta distância, como em ambientes corporativos.</li>
+    </ul>
 </body>
 </html>

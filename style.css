@@ -1,0 +1,28 @@
+body {background-color: rgb(253, 233, 194); padding: 20px;}
+h1   {color: rgb(66, 66, 68);}
+p    {color: black;}
+summary {font-weight: 600; font-size: medium;}
+
+details {
+    user-select: none;
+  } */
+  
+  details>summary span.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+    margin-left: auto;
+  }
+   
+  details[open] summary span.icon {
+    transform: rotate(180deg);
+  }
+  
+  /* summary {
+    display: flex;
+    cursor: pointer;
+  } */
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }

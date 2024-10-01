@@ -3,28 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Caderno de Erros</title>
 </head>
 <body>
     <!-- BOTH -->
     <H3>BOTH</H3>
-    <a href="bd.html"><h3>BANCOS DE DADOS</h3></a>
-    <a href="gestao.html"><h3>GESTÃO E GOVERNANÇA DE TI</h3></a>
-    <a href="poo.html"><h3>Programação Orientada a Objetos</h3></a>
-    <a href="ux.html"><h3>Interface de interação com usuário</h3></a>
-    <BR>
+    <!-- <a href="bd.html"><h3>BANCOS DE DADOS</h3></a> -->
+
+    <details>
+        <summary>
+            BANCOS DE DADOS
+        </summary>
+        <div id="bd"></div>
+
+<script>
+    fetch('bd.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('bd').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o arquivo:', error));
+</script>
+    </details><br>
+
+    <details>
+       <summary>
+        GERENCIAMENTO DE SERVIÇOS DE TI E GERÊNCIA DE PROJETOS
+        </summary>
+        <div id="gestao"></div>
+
+<script>
+    fetch('gestao.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('gestao').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o arquivo:', error));
+</script>
+    </details><br>
+
+
+    <details>
+        <summary>
+        ANÁLISE E PROJETO ORIENTADOS A OBJETOS, PROGRAMAÇÃO ORIENTADA A OBJETOS, 
+        INTERFACE DE INTERAÇÃO COM USUÁRIO
+         </summary>
+         <div id="poo"></div>
+ 
+ <script>
+     fetch('poo.html')
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById('poo').innerHTML = data;
+         })
+         .catch(error => console.error('Erro ao carregar o arquivo:', error));
+ </script>
+     </details><br>
+
 
     <!-- BASA -->
     <H3>BASA</H3>
+    
+    <details>
+        <summary>
+            NOÇÕES DE SISTEMA BANCÁRIO
+         </summary>
+         <div id="conhec_bancarios"></div>
+ 
+ <script>
+     fetch('basa/conhec_bancarios.html')
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById('conhec_bancarios').innerHTML = data;
+         })
+         .catch(error => console.error('Erro ao carregar o arquivo:', error));
+ </script>
+     </details><br>
+
+
+    <details>
+        <summary>
+        REDES DE COMPUTADORES
+        </summary>
+        <div id="redes"></div>
+
+<script>
+    fetch('basa/redes.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('redes').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o arquivo:', error));
+</script>
+    </details><br>
+
     <a href="basa/arq.html"><h3>ARQUITETURA</h3></a>
     <a href="basa/conhec_bancarios.html"><h3>Conhecimentos Bancarios</h3></a>
     <a href="basa/engsw.html"><h3>Engenharia de Software</h3></a>
     <a href="basa/estrutura.html"><h3>Estrutura de Dados</h3></a>
-    <a href="basa/ling.html"><h3>LINGUAGENS E TECNOLOGIAS DE PROGRAMAÇÃO</h3></a>
+
+    <details>
+        <summary>
+        LINGUAGENS E TECNOLOGIAS DE PROGRAMAÇÃO
+        </summary>
+        <div id="ling"></div>
+
+<script>
+    fetch('basa/ling.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('ling').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o arquivo:', error));
+</script>
+    </details><br>
     <a href="basa/logica.html"><h3>Lógica de Programação</h3></a>
     <a href="basa/projoo.html"><h3>Análise e Projeto Orientados a Objetos</h3></a>
     <a href="basa/qos.html"><h3>Qualidade de Software</h3></a>
-    <a href="basa/redes.html"><h3>REDES DE COMPUTADORES</h3></a>
     <a href="basa/requisitos.html"><h3>Engenharia de Requisitos</h3></a>
     <a href="basa/sistbancario.html"><h3>Sistema Bancario</h3></a>
     <BR>

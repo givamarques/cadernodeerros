@@ -6,88 +6,89 @@
     <title>Bancos de Dados</title>
 </head>
 <body>
-    <a href="index.html">← home</a>
+    <!-- <a href="index.html">← home</a> -->
     <br>
     <h1>Bancos de Dados</h1>
     <!-- <h3>Questão x</h3> -->
-    <article><h1>Conceitos e fundamentos - Modelagem de dados:</h1><br>
-        <h3>conceitual</h3>
-        Conceitos e Fundamentos:
-        É uma coleção estruturada de dados gerenciada por um SGBD.
-        (SGBD) serve para armazenar, organizar, proteger e recuperar dados.
-        Usa tabelas, chaves, índices e transações para organizar os dados.
-        em bancos relacionais usa SQL e em NoSQL usa APIs.
-        <br>
-        <h3>lógica</h3> 
+    <article><!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <title>Resumo sobre Banco de Dados</title>
+        </head>
+        <body>
+            <h1>Resumo sobre Banco de Dados</h1>
         
-        <br>
-        <h3>física</h3> 
+            <h2>1. Conceitos e Fundamentos</h2>
+            <p>Os conceitos e fundamentos de bancos de dados envolvem a compreensão de como organizar, armazenar e gerenciar dados para torná-los facilmente acessíveis e seguros. Envolve terminologia básica como tabelas, registros, chaves e relacionamentos.</p>
         
-        <br>
-
-        Projeto de banco de dados relacional; <br>
-        modelagem de banco de dados relacional;  <br>
-        Modelo Entidade Relacionamento;  <br>
-        2 Abordagem multidimensional.  <br>
-        3 Normalização das estruturas de dados.  <br>
-        4 Integridade referencial.  <br>
-        5 Metadados.  <br> <br>
-        6 Modelagem dimensional. 
-        8 Linguagem de definição de dados (DDL).  <br>
-        9 Linguagem de manipulação de dados (DML).  <br>
-        11 Propriedades de banco de dados.  <br>
-        12 NoSQL (conceitos básicos,  <br>
-        bancos orientados a grafos,  <br>
-        colunas,  <br>
-        chave/valor  <br>
-        documentos);  <br>
-        MongoDB,  <br>
-        13 Banco de dados em memória.  <br>
-        14 Data lakes e soluções para big data. <br>
-        Big data: Fundamentos;  <br>
-        15 Dados Estruturados e não Estruturados.  <br>
-        16 Avaliação de modelos de dados.  <br>
-        17 Técnicas de Integração e Ingestão de Dados (ETL/ELT,  <br>
-        Transferência de Arquivos  <br>
-        Integração via Base de Dados).<br>
-        <h3>Noções de administração dos SGBDs Oracle</h3>  
-        Usado por empresas com grande volume de dados. <br>
-        Possui alta disponicilidade e suporte a operações complexas. <br>
-        Gerenciamento de privilégios de usuários. <br>
-        Backup e recuperação. <br>
-        Oracle Advanced Security. <br>
-        Ajuste de desempenho. <br>
-        Alta disponibilidade. <br>
-        <br>
-        <h3>PostgreSQL</h3> 
-        Opensource <br>
-        extenções avançadas <br>
-        dados complexos <br>
-        autenticação por senha e roles para usuários <br>
-        ajuste de desempenho <br>
-        alta disponibilidade <br>
-        pg_dump = comando de backup <br>
-        <br>
-        <h3>SQLServer</h3>  <br>
-        MySQL;  <br>
-        Linguagem SQL  <br>
-        Linguagem PL/SQL: consultas  <br>
-        subconsultas;  <br>
-        Gatilho (trigger),  <br>
-        visão (view),  <br>
-        function  <br>
-        stored procedures,  <br>
-        packages;  <br>
-        Tratamento de erros; <br>
-        Cursores;  <br>
-        Array;  <br>
-        Administração de dados;  <br>
-        Conceitos de Data Warehouse,  <br>
-        Data Mining,  <br>
-        OLAP,  <br>
-        Tuning em Banco de Dados  <br>
-        Segurança de Banco de Dados,  <br>    
-        Técnicas de preparação  <br>
-        apresentação de dados. </article>
+            <h2>2. Noções de Administração dos SGBDs Oracle, PostgreSQL, SQLServer e MySQL</h2>
+            <p>A administração dos SGBDs (Sistemas de Gerenciamento de Banco de Dados) Oracle, PostgreSQL, SQLServer e MySQL envolve a configuração, manutenção, otimização e gerenciamento da segurança e desempenho desses sistemas. Cada um tem características específicas, mas todos são amplamente usados para armazenar e processar dados corporativos.</p>
+        
+            <h2>3. Linguagem SQL e PL/SQL: Consultas e Subconsultas</h2>
+            <p>SQL (Structured Query Language) é usada para consultar e manipular dados em um banco de dados relacional. PL/SQL é uma extensão da SQL usada no Oracle, permitindo a criação de scripts mais complexos, como funções e blocos de código reutilizáveis.</p>
+        
+            <h2>4. Gatilho (Trigger), Visão (View), Function e Stored Procedures, Packages</h2>
+            <ul>
+                <li><strong>Gatilho (Trigger)</strong>: Um procedimento que é executado automaticamente em resposta a certos eventos no banco de dados.</li>
+                <li><strong>Visão (View)</strong>: Uma consulta salva que age como uma tabela virtual para facilitar o acesso a informações específicas.</li>
+                <li><strong>Function e Stored Procedures</strong>: Blocos de código armazenados que executam tarefas específicas no banco de dados.</li>
+                <li><strong>Packages</strong>: Conjuntos agrupados de funções e procedimentos, geralmente usados para organizar código no Oracle.</li>
+            </ul>
+        
+            <h2>5. Tratamento de Erros</h2>
+            <p>O tratamento de erros é o processo de captura e gerenciamento de erros que podem ocorrer durante a execução de uma consulta ou procedimento, garantindo que o sistema lide com falhas de forma previsível.</p>
+        
+            <h2>6. Cursores</h2>
+            <p>Cursores são utilizados para iterar sobre linhas retornadas por uma consulta. Eles são especialmente úteis em PL/SQL para manipular dados linha a linha.</p>
+        
+            <h2>7. Array</h2>
+            <p>Arrays são estruturas de dados que armazenam coleções de valores, úteis para manipulação de conjuntos de informações em PL/SQL ou outras linguagens associadas ao banco de dados.</p>
+        
+            <h2>8. Projeto e Modelagem de Banco de Dados Relacional</h2>
+            <p>O projeto e modelagem de banco de dados envolvem a criação de um esquema que define como os dados serão armazenados, incluindo tabelas, relacionamentos e restrições.</p>
+        
+            <h2>9. Modelo Entidade Relacionamento</h2>
+            <p>É uma representação gráfica que descreve os dados e seus relacionamentos, sendo uma ferramenta fundamental para o planejamento e design de bancos de dados relacionais.</p>
+        
+            <h2>10. Normalização</h2>
+            <p>Processo de organização de dados para minimizar a redundância e melhorar a integridade. Envolve dividir grandes tabelas em tabelas menores relacionadas.</p>
+        
+            <h2>11. Administração de Dados</h2>
+            <p>Refere-se à gestão dos dados de uma organização, incluindo definição, criação, segurança e política de uso dos dados.</p>
+        
+            <h2>12. Conceitos de Data Warehouse, Data Mining, OLAP</h2>
+            <ul>
+                <li><strong>Data Warehouse</strong>: Repositório centralizado para dados históricos, usados para relatórios e análise.</li>
+                <li><strong>Data Mining</strong>: Processo de análise de grandes volumes de dados para descobrir padrões ocultos.</li>
+                <li><strong>OLAP (Online Analytical Processing)</strong>: Tecnologia que permite realizar consultas analíticas complexas sobre dados armazenados.</li>
+            </ul>
+        
+            <h2>13. Tuning em Banco de Dados</h2>
+            <p>Tuning envolve otimizar o desempenho de consultas e operações no banco de dados para melhorar a eficiência e o tempo de resposta.</p>
+        
+            <h2>14. Segurança de Banco de Dados</h2>
+            <p>A segurança de banco de dados abrange técnicas e práticas para proteger dados contra acessos não autorizados, perda e corrupção, garantindo integridade e confidencialidade.</p>
+        
+            <h2>15. NoSQL: Conceitos Básicos, Tipos de Bancos</h2>
+            <p>NoSQL refere-se a bancos de dados não relacionais, que são escaláveis e flexíveis. Existem diferentes tipos, como:</p>
+            <ul>
+                <li><strong>Bancos Orientados a Grafos</strong>: Usam grafos para representar relacionamentos complexos.</li>
+                <li><strong>Bancos de Colunas</strong>: Armazenam dados em colunas, como o Cassandra.</li>
+                <li><strong>Chave/Valor</strong>: Estruturas simples de chave e valor, como o Redis.</li>
+                <li><strong>Documentos</strong>: Armazenam dados como documentos, geralmente JSON, como o MongoDB.</li>
+            </ul>
+        
+            <h2>16. MongoDB</h2>
+            <p>Um banco de dados NoSQL que armazena dados em formato de documento JSON, proporcionando flexibilidade e escalabilidade.</p>
+        
+            <h2>17. Big Data: Fundamentos</h2>
+            <p>Big Data refere-se a grandes volumes de dados complexos e variados que requerem processamento especializado. Envolve técnicas e ferramentas para coletar, armazenar e analisar dados que não cabem em bancos de dados tradicionais.</p>
+        
+            <h2>18. Técnicas de Preparação e Apresentação de Dados</h2>
+            <p>Essas técnicas incluem a limpeza, transformação e visualização dos dados para torná-los mais compreensíveis e úteis para análise e tomada de decisão.</p>
+        </body>
+        </html>
+        </article>
 </body>
 </html>
