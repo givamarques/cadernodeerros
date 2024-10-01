@@ -98,10 +98,21 @@
 </script>
     </details><br>
 
-    <a href="basa/arq.html"><h3>ARQUITETURA</h3></a>
-    <a href="basa/conhec_bancarios.html"><h3>Conhecimentos Bancarios</h3></a>
-    <a href="basa/engsw.html"><h3>Engenharia de Software</h3></a>
-    <a href="basa/estrutura.html"><h3>Estrutura de Dados</h3></a>
+    <details>
+        <summary>
+        ARQUITETURA
+        </summary>
+        <div id="arq"></div>
+
+<script>
+    fetch('basa/arq.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('arq').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o arquivo:', error));
+</script>
+    </details><br>
 
     <details>
         <summary>
@@ -117,13 +128,89 @@
         })
         .catch(error => console.error('Erro ao carregar o arquivo:', error));
 </script>
+    </details><br><br>
+
+    <details>
+        <summary>
+        Lógica de Programação
+        </summary>
+        <div id="logica"></div>
+
+<script>
+    fetch('basa/logica.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('logica').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o arquivo:', error));
+</script>
     </details><br>
-    <a href="basa/logica.html"><h3>Lógica de Programação</h3></a>
-    <a href="basa/projoo.html"><h3>Análise e Projeto Orientados a Objetos</h3></a>
-    <a href="basa/qos.html"><h3>Qualidade de Software</h3></a>
-    <a href="basa/requisitos.html"><h3>Engenharia de Requisitos</h3></a>
-    <a href="basa/sistbancario.html"><h3>Sistema Bancario</h3></a>
-    <BR>
+
+    <details>
+        <summary>
+        Estrutura de Dados
+        </summary>
+        <div id="estrutura"></div>
+
+<script>
+    fetch('basa/estrutura.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('estrutura').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o arquivo:', error));
+</script>
+    </details><br>
+
+    <details>
+        <summary>
+            Engenharia de Software
+        </summary>
+        <div id="engsw"></div>
+
+<script>
+    fetch('basa/engsw.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('engsw').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o arquivo:', error));
+</script>
+    </details><br>
+
+    <details>
+        <summary>
+            Engenharia de Requisitos
+        </summary>
+        <div id="requisitos"></div>
+
+<script>
+    fetch('basa/requisitos.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('requisitos').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o arquivo:', error));
+</script>
+    </details><br>
+
+
+    <details>
+        <summary>
+            Qualidade de Software
+        </summary>
+        <div id="qos"></div>
+
+<script>
+    fetch('basa/qos.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('qos').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o arquivo:', error));
+</script>
+    </details><br><br>
+
     <!-- DATAPREV -->
     <H3>DATAPREV</H3>
     <a href="dataprev/bi.html"><h3>INTELIGÊNCIA DE NEGÓCIOS (BI)</h3></a>
