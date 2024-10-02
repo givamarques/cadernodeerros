@@ -1,7 +1,7 @@
-body {background-color: rgb(253, 233, 194); padding: 20px;}
-h1   {color: rgb(66, 66, 68);}
-p    {color: black;}
-summary {font-weight: 600; font-size: medium;}
+body {background-color: rgb(223, 222, 222); padding: 20px; font-size: 1rem;
+  font-weight: 400; letter-spacing: .005em; line-height: 1.5rem;
+  font-family: Roboto, Cordia New, "Microsoft Sans Serif", Utsaah, Devanagari MT, Nirmala UI, Latha; color: black;}
+h1, h2, h3   {color: rgb(54, 54, 54);}
 
 details {
     user-select: none;
