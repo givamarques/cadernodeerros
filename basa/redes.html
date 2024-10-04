@@ -21,8 +21,8 @@
     </ul>
 
     <h2>Tecnologias de roteamento: Switches Multilayer e Roteadores</h2>
-    <p>Switches multilayer são switches que operam em múltiplas camadas do modelo OSI, permitindo decisões de roteamento. Roteadores são dispositivos que determinam o caminho de pacotes entre redes.</p>
-
+    <p>Switches multilayer são switches que operam em múltiplas camadas  (2 e 3) do modelo OSI, permitindo decisões de roteamento. Roteadores são dispositivos que determinam o caminho de pacotes entre redes.</p>
+    <img src="../basa/assets/camadas_osi.png" style="max-width: 35%;"><br>
     <h2>Protocolos de roteamento e soluções para problemas (OSPF e BGP)</h2>
     <ul>
         <li><strong>OSPF (Open Shortest Path First)</strong>: Protocolo de roteamento interno que determina a rota mais curta dentro de uma rede.</li>
@@ -44,13 +44,68 @@
     <h2>Arquitetura e protocolos da família TCP/IP</h2>
     <ul>
         <li><strong>Funcionalidades das camadas da arquitetura TCP/IP</strong>: Dividida em quatro camadas (Aplicação, Transporte, Internet, e Enlace), cada uma com funções específicas.</li>
+        <img src="../basa/assets/camadas_tcpip.png" style="max-width: 35%;"><br><br>
         <li><strong>Análise de tabelas de rotas</strong>: Verificar rotas possíveis para pacotes de dados.</li>
+        <p>Uma tabela de roteamento é um registro dentro de cada roteador.<br>
+            <img src="../basa/assets/tabela_roteamento.png"><br>
+            Ela informa qual caminho um pacote deve seguir para cada rede de destino.            
+            Cada tabela contém uma lista de destinos com prefixos de endereços IP para os quais o pacote pode ser encaminhado.
+            Quando um pacote chega a um roteador, o roteador lê o cabeçalho para ver para qual endereço IP o pacote está sendo enviado.            
+            Em seguida, ele verifica esse endereço IP em sua lista de destinos e, por fim, determina a melhor rota para o pacote seguir.</p>
         <li><strong>Subredes e superredes</strong>: Dividir redes maiores em menores (subredes) ou unir redes menores em maiores (superredes).</li>
+        <p>O protocolo IPv4 utiliza endereços de 32 bits, à medida que as várias redes IPv4 foram interligadas (formando a "internet")
+            começou um grave problema porque todos os endereços tinham de ser únicos. O espaço de endereçamento começou a não ser suficiente.            
+            As regras de endereçamento que dividem as redes em classes eram restritivas, 
+            levando ao "desperdicio" de muitos endereços, pois o aproveitamento de cada rede apenas se verifica para um número exacto de nós, 
+            que raramente corresponde às situações concretas.            
+            Para resolver este problema foi desenvolvido o IPv6, com endereços de 128 bits.</p>
         <li><strong>Controle de erro e fluxo do TCP</strong>: Utiliza reconhecimento e janela deslizante para assegurar a entrega dos pacotes.</li>
         <li><strong>Portas de comunicação da camada de transporte</strong>: Identificadores numéricos que permitem conexões específicas entre dispositivos.</li>
         <li><strong>Interface de sockets</strong>: Conjunto de funções usadas para comunicação de rede.</li>
         <li><strong>Endereçamento IP (IPv4 e IPv6)</strong>: Identificação de dispositivos em redes usando endereços numéricos.</li>
     </ul>
+
+    <h1>Protocolos da Família TCP/IP</h1>
+    <p>Os protocolos da família TCP/IP são um conjunto de regras de comunicação usados para interligar dispositivos em uma rede e garantir a troca de dados de forma eficiente e segura. Vamos entender cada um dos principais aspectos do TCP/IP.</p>
+
+    <h2>O que são?</h2>
+    <p>TCP/IP (Transmission Control Protocol/Internet Protocol) é um conjunto de protocolos que permite a comunicação entre dispositivos na Internet e em redes locais. Eles definem como os dados devem ser divididos, endereçados, transmitidos, roteados e recebidos para que a comunicação ocorra corretamente entre diferentes dispositivos.</p>
+
+    <h2>Para que servem?</h2>
+    <p>Os protocolos da família TCP/IP servem para possibilitar a troca de informações em redes de computadores, desde uma simples rede local até a grande escala da Internet. Eles garantem que dados como páginas da web, e-mails e arquivos sejam transmitidos corretamente entre máquinas, independentemente das diferenças de hardware ou software.</p>
+
+    <h2>Como funcionam?</h2>
+    <p>O modelo TCP/IP é dividido em camadas, onde cada uma tem uma função específica no processo de comunicação. As principais camadas do modelo TCP/IP são:</p>
+
+    <h3>1. Camada de Aplicação</h3>
+    <p>É onde os protocolos de alto nível operam, permitindo que aplicações (como navegadores e clientes de e-mail) interajam com a rede. Exemplos de protocolos desta camada incluem HTTP, SMTP, FTP, entre outros.</p>
+
+    <h3>2. Camada de Transporte</h3>
+    <p>Responsável por garantir a entrega dos dados entre as máquinas. Nesta camada, dois dos principais protocolos são:</p>
+    <ul>
+        <li><strong>TCP (Transmission Control Protocol)</strong>: Garante que os pacotes sejam entregues corretamente, oferecendo um serviço confiável e orientado à conexão. Utiliza técnicas como controle de erro e confirmação de recebimento.</li>
+        <li><strong>UDP (User Datagram Protocol)</strong>: Oferece um serviço não confiável, sem controle de conexão, mas com baixa latência, sendo útil para transmissões em tempo real.</li>
+    </ul>
+
+    <h3>3. Camada de Rede (ou Internet)</h3>
+    <p>Define como os pacotes são roteados entre as redes. O principal protocolo desta camada é o <strong>IP (Internet Protocol)</strong>, responsável por endereçar e encaminhar pacotes de dados. Existem duas versões principais do IP:</p>
+    <ul>
+        <li><strong>IPv4</strong>: Utiliza endereços de 32 bits e é a versão mais utilizada.</li>
+        <li><strong>IPv6</strong>: Utiliza endereços de 128 bits e foi criado para resolver a limitação de endereços do IPv4.</li>
+    </ul>
+
+    <h3>4. Camada de Enlace (ou Link de Dados)</h3>
+    <p>Lida com a interface física e o transporte dos dados dentro de uma rede local, garantindo que os pacotes possam ser transmitidos entre diferentes dispositivos na mesma rede.</p>
+
+    <h2>Funcionalidades Importantes</h2>
+    <ul>
+        <li><strong>Controle de Erro e Fluxo</strong>: Protocolos como o TCP utilizam técnicas de reconhecimento (ACK) e janela deslizante para garantir que os dados cheguem sem erros e na ordem correta.</li>
+        <li><strong>Endereçamento</strong>: Cada dispositivo na rede tem um endereço IP único, permitindo que os dados sejam enviados ao destino correto.</li>
+        <li><strong>Sockets e Portas</strong>: Utilizados para identificar de maneira única cada serviço em um dispositivo. Sockets combinam endereço IP e número de porta para definir a comunicação.</li>
+    </ul>
+
+    <p>Em resumo, os protocolos TCP/IP formam a base da comunicação em redes de computadores, definindo como os dados são transmitidos, endereçados e garantidos de forma segura e eficiente. Eles são fundamentais para o funcionamento da Internet e a maioria das redes locais.</p>
+
 
     <h2>Serviços de redes de comunicação</h2>
     <p>Incluem DNS, DHCP, FTP, HTTP, que facilitam a comunicação e acesso a recursos na internet.</p>

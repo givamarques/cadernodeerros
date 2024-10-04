@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts.js"></script>
     <title>Estrutura de Dados</title>
 </head>
 <body>
@@ -27,6 +28,38 @@
     <p><strong>Árvores</strong> são estruturas de dados hierárquicas que representam relações de pai e filho entre elementos. As generalizações incluem:</p>
     <ul>
         <li><strong>Árvores Binárias:</strong> Cada nó tem, no máximo, dois filhos.</li>
+        <!-- <span id="dots">...</span>
+        <div id="leiamais" style="padding: 15px; margin: 15px;">
+            <img src="/basa/assets/arvore_binaria.png">
+            <br>
+            <h2>Ordem Simétrica (In-Order Traversal)</h2> -->
+            <!-- <img src="/basa/assets/arvore-Inorder.gif"> -->
+            <!-- <p>A ordem simétrica ou <strong>in-order traversal</strong> de uma árvore binária percorre a árvore da seguinte forma:</p>
+            <ol>
+                <li>Percorre a <strong>subárvore esquerda</strong>.</li>
+                <li>Visita o <strong>nó raiz</strong>.</li>
+                <li>Percorre a <strong>subárvore direita</strong>.</li>
+            </ol>
+
+            <p>Vamos aplicar isso à árvore fornecida:</p>            
+
+            <p>Começando pela raiz (60), aplicamos a ordem simétrica para obter a sequência dos valores.</p>
+
+            <h2>Passo a Passo da Ordem Simétrica</h2>
+            <ol>
+                <li>Começamos pela raiz, que é <strong>60</strong>.</li>
+                <li>Percorremos a <strong>subárvore esquerda</strong> de 60, começando por <strong>10</strong>.</li>
+                <li>Em <strong>10</strong>, antes de visitar esse nó, percorremos a <strong>subárvore esquerda</strong>, chegando a <strong>50</strong>.</li>
+                <li>Em <strong>50</strong>, antes de visitar esse nó, percorremos a <strong>subárvore esquerda</strong>, chegando a <strong>90</strong>. Como <strong>90</strong> não tem filhos, <strong>visitamos 90</strong>.</li>
+                <li>Voltamos para <strong>50</strong> e visitamos <strong>50</strong>.</li>
+                <li>Agora, percorremos a <strong>subárvore direita</strong> de <strong>50</strong>, chegando a <strong>80</strong>. Como <strong>80</strong> não tem filhos, <strong>visitamos 80</strong>.</li>
+                <li>Voltamos para <strong>10</strong> e <strong>visitamos 10</strong>.</li>
+                <li>Em seguida, percorremos a <strong>subárvore direita</strong> de <strong>10</strong>, chegando a <strong>100</strong>.</li>
+                <li>Em <strong>100</strong>, antes de visitá-lo, percorremos a <strong>subárvore esquerda</strong>, chegando a <strong>70</strong>.</li>
+            </ol>
+        </div>
+        <button onclick="myFunction()" id="myBtn">Leia mais</button> -->
+
         <li><strong>Árvores de Busca:</strong> Árvores binárias onde os elementos seguem uma ordem específica que facilita buscas.</li>
         <li><strong>Árvores Balanceadas (AVL):</strong> Árvores de busca que mantêm a altura balanceada para garantir operações eficientes.</li>
         <li><strong>Árvores B e B+:</strong> Árvores balanceadas usadas em bancos de dados e sistemas de arquivos para armazenar dados de forma eficiente e facilitar buscas.</li>
