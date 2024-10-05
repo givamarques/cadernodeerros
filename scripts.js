@@ -20,3 +20,8 @@ function myFunction() {
              document.getElementById('poo').innerHTML = data;
          })
          .catch(error => console.error('Erro ao carregar o arquivo:', error));
+
+function mostrarMais() {
+var textoCompleto = document.querySelector('.texto-completo');
+textoCompleto.style.display = 'block'; 
+}

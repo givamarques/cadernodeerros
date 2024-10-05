@@ -28,3 +28,13 @@ details {
   }
 
   #leiamais {display: none;}
+
+  .texto-completo {
+    display: none; /* Inicialmente, o texto completo está escondido */
+}
+
+.button1 {
+  background-color: none;;
+  border: none;
+  font-size: 16px;
+}
