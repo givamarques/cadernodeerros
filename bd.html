@@ -55,7 +55,53 @@
         <p>Entidade = retangulo / Relacionamento = Losango (podem aparecer juntos, formando a bandeira do BR)</p>
             <h3>10. Normalização</h3>
             <p>Processo de organização de dados para minimizar a redundância e melhorar a integridade. Envolve dividir grandes tabelas em tabelas menores relacionadas.</p>
-        
+            <h1>As Formas Normais no Desenvolvimento de Bancos de Dados</h1>
+
+            <p>As <strong>formas normais</strong> são regras que guiam a organização dos dados em um banco de dados relacional, visando eliminar redundâncias, inconsistências e dependências anômalas. Ao seguir essas regras, você garante a integridade, consistência e eficiência do seu banco de dados.</p>
+            
+            <h2>As principais formas normais são:</h2>
+            
+            <ol>
+                <li><b>1ª Forma Normal (1FN)</b>
+                    <ul>
+                        <li>Cada célula deve conter um único valor atômico.</li>
+                        <li>Cada coluna deve ter um único tipo de dado.</li>
+                    </ul>
+                </li>
+                <li><b>2ª Forma Normal (2FN)</b>
+                    <ul>
+                        <li>A tabela deve estar em 1FN.</li>
+                        <li>Todas as colunas não-chave devem depender de toda a chave primária.</li>
+                    </ul>
+                </li>
+                <li><b>3ª Forma Normal (3FN)</b>
+                    <ul>
+                        <li>A tabela deve estar em 2FN.</li>
+                        <li>Não deve haver dependências transitivas.</li>
+                    </ul>
+                </li>
+                <li><b>Forma Normal de Boyce-Codd (FNBC)</b>
+                    <ul>
+                        <li>É um refinamento da 3FN.</li>
+                        <li>Toda determinante deve ser uma chave candidata.</li>
+                    </ul>
+                </li>
+                <li><b>Formas Normais Superiores (4FN, 5FN)</b>
+                    <ul>
+                        <li>São menos comuns e mais complexas.</li>
+                        <li>Lidam com dependências multivaloradas e join dependencies.</li>
+                    </ul>
+                </li>
+            </ol>
+            
+            <h3>Por que a normalização é importante?</h3>
+            <ul>
+                <li>Elimina redundâncias</li>
+                <li>Minimiza anomalias</li>
+                <li>Melhora a integridade dos dados</li>
+                <li>Facilita a manutenção do banco de dados</li>
+            </ul>
+            
             <h3>11. Administração de Dados</h3>
             <p>Refere-se à gestão dos dados de uma organização, incluindo definição, criação, segurança e política de uso dos dados.</p>
         
